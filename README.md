@@ -130,6 +130,15 @@ All main settings can be customized in [`src/main.cpp`](src/main.cpp):
 
 ---
 
+## Antenna System
+
+This receiver is paired with a custom-tuned **Half-Wave Dipole Antenna** designed specifically for the FM broadcast band (87.5 MHz – 108.0 MHz):
+- **Resonance & Bandwidth**: Centered around **98 MHz** with a **20 MHz bandwidth** ($S_{11} = -20.80\text{ dB}$, $\text{SWR} = 1.20$ at resonance).
+- **High Sensitivity**: Delivers clean, low-noise FM reception across the entire band directly into the SA636 frontend without an external LNA.
+- **Build Details & Measurements**: See the **[Antenna Design & VNA Documentation](antenna/README.md)** for full NanoVNA sweeps, 3D-printed weatherproof feedpoint hub details, outdoor mast mounting, and HFSS electromagnetic simulation.
+
+---
+
 ## Building and Flashing
 
 This project is configured for **[PlatformIO](https://platformio.org/)**.
